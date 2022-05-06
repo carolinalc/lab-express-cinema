@@ -1,0 +1,26 @@
+
+
+<a href="/Movie" class="atras2"> 🔙</a> <br>
+
+<img src="{{movieInfo.image}}" alt="" class="lafoto" width="300"><br>
+<div id="contenido">
+<h2>{{movieInfo.title}}</h2>
+<h3>Director: {{movieInfo.director}}</h3>
+<p>Stars: 
+ 
+    {{#each movieInfo.stars}}
+    <li>{{this}}</li>
+    {{/each}}
+
+</p>
+<p>{{movieInfo.description}}</p>
+
+<span>
+ {{#each movieInfo.showtimes}}
+    {{this}} | 
+    {{/each}}
+    </span>
+</div>
+<br> <br>
+
+<a href="/" class="linkcasa">⋆ click to home page ⋆</a>

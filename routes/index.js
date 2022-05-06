@@ -33,7 +33,7 @@ router.get("/Movie/:movieId", async (req, res, next) => {
       const response = await movieModel.findById(movieId)
       console.log(response)
     //3. renderizar la vista al usuario con el pokemon
-    res.render("pokemon-details.hbs", {
+    res.render("movies-info.hbs", {
       movieInfo: response
     })
     }

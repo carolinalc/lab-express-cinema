@@ -1,14 +1,30 @@
-<h1>LISTADO DE PELIS</h1>
+
+
+
+
+<h1 id="tituloUno">Ironhack Cinema</h1><br>
+<h4 id="tituloDos">Click on the movie to</h4><h4 id="tituloTres">  check the showtime!</h4><br>
+
+
+<div id="servicebox">
 
 
 {{#each moviesList}}
 
-<li>
+<ul>
+    <div id="letreros">
     <img src="{{this.image}}" alt=""><br>
   
-    {{this.title}} <br>
+   <p class="titulillo">{{this.title}} <br></p> 
 
-    <a href="">See more</a><br>
-</li>
+    <a href="/Movie/{{this._id}}" class="seemore">See more</a><br>
+    </div>
+</ul>
 
 {{/each}}
+
+</div>
+
+<a href="/" class="atras1"> 🔙</a><br>
+
+
